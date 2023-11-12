@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox - 10</title>
+    <style>
+        *,*::before,*::after{box-sizing: border-box;}
+        body{margin-bottom: 3em;}
+        header h1{margin-bottom: 2em;}
+        .flex-container{
+            margin-left: auto; margin-right: auto;
+            width: 50%; height: 450px; border: 1px solid #004d40;
+            display: flex; justify-content: center; flex-flow: row wrap; align-items: center; 
+            flex-shrink: 1;
+            }
+        div{color: #004d40; font-size: 2em; padding: 10px; background-color: #f4ff81; width: 100px; height: 150px; margin: 16px;}
+        main > :nth-child(6){order: -1; flex-shrink: 1;}
+        main > :nth-child(4){order: 1; flex-grow: 1;}
+        main > :nth-child(3){flex-shrink: 1;}
+    </style>
 </head>
-<style>
-    *,*::before,*::after{box-sizing: border-box;}
-    body{margin-bottom: 3em;}
-    header h1{margin-bottom: 2em;}
-    .flex-container{
-        margin-left: auto; margin-right: auto;
-        width: 50%; height: 450px; border: 1px solid #004d40;
-        display: flex; justify-content: center; flex-flow: row wrap; align-items: center; 
-        flex-shrink: 1;
-        }
-    div{color: #004d40; font-size: 2em; padding: 10px; background-color: #f4ff81; width: 100px; height: 150px; margin: 16px;}
-    main > :nth-child(6){order: -1; flex-shrink: 1;}
-    main > :nth-child(4){order: 1; flex-grow: 1;}
-    main > :nth-child(3){flex-shrink: 1;}
-</style>
 <body>
     <header><h1>Flexbox 10 - <code>flex-shrink</code></h1></header>
     <main class="flex-container">
